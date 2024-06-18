@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(197, 195, 193);
+}
+
+#barra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: solid;
+    background-color: rgb(145, 145, 144);
+    border-radius: 10px;
+    border-color: #ffffff;
+}
+
+#busqueda {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#busqueda input {
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#busqueda button {
+    height: 35px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+#cartas {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 250px;
+    height: 100%;
+    width: 100%;
+}
+
+.carta {
+    margin-top: 20px;
+    width: 150px;
+    height: 230px;
+    border: solid;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.imagen img {
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.nombre, .descripcion {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.eliminar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#modalpadre {
+    display: flex;
+    flex-direction: column;
+}
+
+#modalpadre input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#modalpadre button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#modalpadre button:hover {
+    background-color: #0056b3;
+}
